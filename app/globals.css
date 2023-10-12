@@ -3,17 +3,57 @@
 @tailwind utilities;
 
 html {
-  @apply w-full max-h-full
+  @apply w-full h-full
 }
 
 body {
-  @apply w-full max-h-full
+  @apply w-full h-full
 }
 
+h1 {
+  @apply font-bold text-3xl
+}
+
+h2 {
+  @apply text-2xl
+}
 .mainbar {
-  @apply flex w-full shadow-sm
+  @apply flex w-full shadow-sm lg:justify-center
 }
 
 .barbutton { 
-  @apply m-2 w-20 h-20 flex justify-center hover:bg-red-200 cursor-pointer 
+  @apply m-1 w-16 h-16 flex flex-col justify-center items-center hover:bg-blue-200 cursor-pointer 
 }
+
+.themeInicio {
+  @apply flex flex-col h-full items-center
+}
+
+.themeinicioTitle {
+  @apply px-4 py-2 m-2 mt-10
+}
+
+.themeInicioLogo {
+  @apply px-4 py-2 m-2 flex justify-center
+}
+
+.themeInicioMesa {
+  @apply px-4 py-2 m-2 flex justify-center mt-10
+}
+
+.themeInicioBoton {
+  @apply px-4 py-2 m-2 flex justify-center mt-5 w-full
+}
+
+.button1 {
+  @apply bg-blue-600 font-bold text-white w-56 h-20 rounded-lg shadow-md
+}
+
+.themeMesaActiva {
+  @apply flex flex-col h-full bg-blue-300
+}
+
+.themeMesaActivaTitle {
+  @apply px-4 py-2
+}
+

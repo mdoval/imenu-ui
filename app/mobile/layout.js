@@ -10,7 +10,7 @@ export default function MobileLayout({ children }) {
     <html lang="en">
       <body>
         <MainBar />
-        {children}
+          {children}
         </body>
     </html>
   )

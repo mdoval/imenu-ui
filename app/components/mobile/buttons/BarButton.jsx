@@ -7,10 +7,8 @@ export default function BarButton({ text, icon, url }) {
   return (
     <Link href={url}>
       <div className="barbutton">
-        <div className="flex-col mt-auto mb-auto">
-          <div className="text-3xl justify-items-center">{icon}</div>
-          <div className="ml-auto mr-auto justify-center" >{text}</div>
-        </div>
+          <div><h1>{icon}</h1></div>
+          <div>{text}</div>
       </div>
     </Link>
   );
