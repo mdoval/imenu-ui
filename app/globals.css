@@ -11,9 +11,9 @@ body {
 }
 
 .mainbar {
-  @apply bg-gray-200 flex w-full
+  @apply flex w-full shadow-sm
 }
 
 .barbutton { 
-  @apply m-3 border-2 border-black w-20 h-20 flex justify-center hover:bg-red-200 cursor-pointer 
+  @apply m-2 w-20 h-20 flex justify-center hover:bg-red-200 cursor-pointer 
 }
