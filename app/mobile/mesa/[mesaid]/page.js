@@ -8,13 +8,11 @@ async function checkMesa(mesaid) {
 }
 
 export default async function Mesa({ params }) {
-  const mesa = await checkMesa(params.mesaid)
-  console.log(mesa)
-  console.log(mesa.isActive)
+  const { mesa } = await checkMesa(params.mesaid)
   if(mesa.isActive) {
-    return <MesaActiva mesaid={params.mesaid} />
+    return <MesaActiva mesaid={mesa.id} descripcion={mesa.nombre} />
   } else  {
-    return <ActivarMesa mesaid={params.mesaid} />
+    return <ActivarMesa mesaid={mesa.id} descripcion={mesa.nombre} />
   }
   
 

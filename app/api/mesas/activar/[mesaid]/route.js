@@ -1,33 +1,26 @@
-/*
-import { NextResponse } from "next/server";
-
-export async function GET(request , {params}) {
-    //console.log(params)
-    return NextResponse.json({mesa: params.mesaid, isActive: true})
-}
-*/
-
 import { NextResponse } from 'next/server'
 import prisma from '@/db/prisma'
 import getUser from '@/lib/getUserId'
 
 export async function GET(request,{ params }) {
     const mesaId = parseInt(params.mesaid)
-    //console.log(mesaId)
 
-    let mesa = []
+    let updateMesa = {}
     try {
-        mesa = await prisma.mesa.findUnique({
+        updateMesa = await prisma.mesa.update({
             where: {
                     id: mesaId,
-                }            
+                },
+            data: {
+                    isActive: true
+                }
             }
         );
       } catch (error) {
-        console.error('Error al obtener los Mesas', error);
+        console.error('Error al Activar una Mesa', error);
       } finally {
         await prisma.$disconnect(); // Cierra la conexión a la base de datos cuando hayas terminado
       }
 
-    return NextResponse.json( { mesa } )
+    return NextResponse.json( { updateMesa } )
 }

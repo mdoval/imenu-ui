@@ -1,7 +1,7 @@
-import ButtonActivarMesa from "@/app/components/mobile/buttons/ButtonActivarMesa";
+import ButtonCerrarMesa from "@/app/components/mobile/buttons/ButtonCerrarMesa";
 import DataGrid from "@/app/components/DataGrid/DataGrid";
 
-export default function MesaActiva({mesaid}) {
+export default function MesaActiva({mesaid, descripcion}) {
     return (
         <div className="themeMesaActiva">
           <div className="themeMesaActivaTitle">
@@ -11,10 +11,10 @@ export default function MesaActiva({mesaid}) {
             <DataGrid />
           </div>
           <div className="themeInicioMesa">
-            <h2>Mesa {mesaid}</h2>
+            <h2>Mesa <b>{descripcion}</b></h2>
           </div>
           <div className="themeInicioBoton">
-            <ButtonActivarMesa />
+            <ButtonCerrarMesa mesaId={mesaid} />
           </div>
         </div>
       );

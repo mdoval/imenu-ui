@@ -2,7 +2,7 @@ import Image from "next/image";
 import logoPic from "@/public/images/logo_bar.png";
 import ButtonActivarMesa from "@/app/components/mobile/buttons/ButtonActivarMesa";
 
-export default function ActivarMesa({mesaid}) {
+export default function ActivarMesa({mesaid, descripcion}) {
     return (
         <div className="themeInicio">
           <div className="themeinicioTitle">
@@ -12,10 +12,10 @@ export default function ActivarMesa({mesaid}) {
             <Image src={logoPic} alt="Logo del Bar" className=" w-3/4" />
           </div>
           <div className="themeInicioMesa">
-            <h2>Mesa {mesaid}</h2>
+            <h2>Mesa {descripcion}</h2>
           </div>
           <div className="themeInicioBoton">
-            <ButtonActivarMesa />
+            <ButtonActivarMesa mesaId={mesaid} />
           </div>
         </div>
       );

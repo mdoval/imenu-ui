@@ -49,6 +49,10 @@ h2 {
   @apply bg-blue-600 font-bold text-white w-56 h-20 rounded-lg shadow-md
 }
 
+.button2 {
+  @apply bg-red-600 font-bold text-white w-56 h-20 rounded-lg shadow-md
+}
+
 .themeMesaActiva {
   @apply flex flex-col h-full bg-blue-300
 }
