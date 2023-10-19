@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logoPic from "@/public/images/logo_bar.png";
 import ButtonActivarMesa from "@/app/components/mobile/buttons/ButtonActivarMesa";
+import ButtonMostrarContext from "../buttons/ButtonMostrarContext";
 
 export default function ActivarMesa({mesaid, descripcion}) {
     return (
@@ -16,6 +17,7 @@ export default function ActivarMesa({mesaid, descripcion}) {
           </div>
           <div className="themeInicioBoton">
             <ButtonActivarMesa mesaId={mesaid} />
+            <ButtonMostrarContext />
           </div>
         </div>
       );

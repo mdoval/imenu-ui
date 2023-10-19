@@ -1,12 +1,3 @@
-/*
-import { NextResponse } from "next/server";
-
-export async function GET(request , {params}) {
-    //console.log(params)
-    return NextResponse.json({mesa: params.mesaid, isActive: true})
-}
-*/
-
 import { NextResponse } from 'next/server'
 import prisma from '@/db/prisma'
 import getUser from '@/lib/getUserId'

@@ -53,6 +53,14 @@ h2 {
   @apply bg-red-600 font-bold text-white w-56 h-20 rounded-lg shadow-md
 }
 
+.button3 {
+  @apply bg-green-600 font-bold text-white w-56 h-20 rounded-lg shadow-md
+}
+
+.button3 {
+  @apply bg-blue-200 font-bold text-white w-20 h-20 rounded-lg m-2 shadow-md hover:bg-gray-200
+}
+
 .themeMesaActiva {
   @apply flex flex-col h-full bg-blue-300
 }

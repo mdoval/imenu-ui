@@ -53,6 +53,7 @@ model Mesa {
   barId         Int
   comandas  Comanda[]
   isActive        Boolean  @default(false)
+  pin           Int 
 }
 
 model Comanda {

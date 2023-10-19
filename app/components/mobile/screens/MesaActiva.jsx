@@ -1,5 +1,6 @@
 import ButtonCerrarMesa from "@/app/components/mobile/buttons/ButtonCerrarMesa";
 import DataGrid from "@/app/components/DataGrid/DataGrid";
+import ButtonMostrarContext from "../buttons/ButtonMostrarContext";
 
 export default function MesaActiva({mesaid, descripcion}) {
     return (
@@ -15,6 +16,7 @@ export default function MesaActiva({mesaid, descripcion}) {
           </div>
           <div className="themeInicioBoton">
             <ButtonCerrarMesa mesaId={mesaid} />
+            <ButtonMostrarContext />
           </div>
         </div>
       );
