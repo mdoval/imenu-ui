@@ -69,3 +69,6 @@ h2 {
   @apply px-4 py-2
 }
 
+.display1number {
+  @apply bg-white w-20 h-20 m-2 text-7xl text-center rounded-lg border-2 border-blue-400 shadow-lg
+}
